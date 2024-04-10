@@ -84,7 +84,7 @@
             modules = [
               ./nixos
               agenix.nixosModules.age
-              nixos-hardware.nixosModules.dell-xps-15-9520-nvidia
+              nixos-hardware.nixosModules.dell-xps-15-9530-nvidia
               waveforms.nixosModule
               talon-nix.nixosModules.talon
             ];

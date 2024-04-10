@@ -75,10 +75,10 @@
     # gomuks
     obs-studio
     remmina
-    kicad
+    # kicad # TODO Readd this later
     prusa-slicer
     wireshark
-    reaper
+    # reaper # Musik
     (pkgs.python3.withPackages (ps: with ps; [ pyserial python-lsp-server ]))
   ];
 }

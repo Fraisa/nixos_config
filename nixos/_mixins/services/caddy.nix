@@ -10,15 +10,15 @@ _: {
       reverse_proxy ripxolab:8082
     '';
 
-    virtualHosts."mat.ripxorip.org".extraConfig = ''
+    virtualHosts."mat.fraisa.org".extraConfig = ''
       reverse_proxy ripxolab:9123
     '';
 
-    virtualHosts."matrix.ripxorip.org".extraConfig = ''
+    virtualHosts."matrix.fraisa.org".extraConfig = ''
       reverse_proxy ripxolab:8008
     '';
 
-    virtualHosts."rss.ripxorip.org".extraConfig = ''
+    virtualHosts."rss.fraisa.org".extraConfig = ''
       reverse_proxy ripxolab:9654
     '';
   };

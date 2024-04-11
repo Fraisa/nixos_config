@@ -8,7 +8,7 @@ require('settings')
 -- require('plugins')
 
 -- My custom lua scripts
-require('ripxorip')
+require('fraisa')
 
 -- Key mappings
 require('keymappings')

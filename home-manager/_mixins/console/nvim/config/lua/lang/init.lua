@@ -96,7 +96,7 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true;
 nvim_lsp.ccls.setup{
     init_options = {
         cache = {
-            directory = "/home/ripxorip/.cache/ccls"
+            directory = "/home/fraisa/.cache/ccls"
         };
     };
     root_dir = nvim_lsp.util.root_pattern('compile_commands.json');

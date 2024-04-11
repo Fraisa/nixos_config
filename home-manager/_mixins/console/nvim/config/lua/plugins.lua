@@ -34,11 +34,11 @@ return require('packer').startup(function()
     -- use {'sainnhe/gruvbox-material'}
     use {'joshdick/onedark.vim'}
     use {'NLKNguyen/papercolor-theme'}
-    use {'ripxorip/gruvbox'}
-    use {'ripxorip/onehalf'}
-    use {'ripxorip/bolt.nvim'}
-    use {'ripxorip/aerojump.nvim'}
-    use {'ripxorip/utils.nvim'}
+    use {'fraisa/gruvbox'}
+    use {'fraisa/onehalf'}
+    use {'fraisa/bolt.nvim'}
+    use {'fraisa/aerojump.nvim'}
+    use {'fraisa/utils.nvim'}
     use {'jremmen/vim-ripgrep'}
 
     -- use {'sonph/onehalf', rtp= 'vim'}

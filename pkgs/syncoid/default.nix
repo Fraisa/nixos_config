@@ -48,7 +48,7 @@ stdenv.mkDerivation rec {
     description = "Custom build of syncoid to work around the sudo bug";
     homepage = "https://github.com/jimsalterjrs/sanoid";
     license = licenses.gpl3Plus;
-    maintainers = with maintainers; [ ripxorip ];
+    maintainers = with maintainers; [ fraisa ];
     platforms = platforms.all;
   };
 }

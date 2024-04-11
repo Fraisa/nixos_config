@@ -18,10 +18,10 @@
       After = [ "local-fs.target" ];
     };
     serviceConfig = {
-      User = "ripxorip";
+      User = "fraisa";
       Type = "oneshot";
-      ExecStart = "${pkgs.python3}/bin/python /home/ripxorip/dev/ripxobot/ripxobot.py";
-      WorkingDirectory = "/home/ripxorip/dev/ripxobot/";
+      ExecStart = "${pkgs.python3}/bin/python /home/fraisa/dev/ripxobot/ripxobot.py";
+      WorkingDirectory = "/home/fraisa/dev/ripxobot/";
     };
   };
 }

@@ -30,24 +30,24 @@ Plug 'junegunn/gv.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-unimpaired'
-Plug 'ripxorip/bolt.nvim'
-Plug 'ripxorip/utils.nvim'
-Plug 'ripxorip/ccflags.nvim'
-Plug 'ripxorip/aerojump.nvim'
-Plug 'ripxorip/r2.nvim'
+Plug 'fraisa/bolt.nvim'
+Plug 'fraisa/utils.nvim'
+Plug 'fraisa/ccflags.nvim'
+Plug 'fraisa/aerojump.nvim'
+Plug 'fraisa/r2.nvim'
 Plug 'chrisbra/Colorizer'
 " Themes
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'overcache/NeoSolarized'
-Plug 'ripxorip/gruvbox'
+Plug 'fraisa/gruvbox'
 Plug 'crusoexia/vim-monokai'
 Plug 'nanotech/jellybeans.vim'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 """"""""""""""""""""
 Plug 'gcmt/taboo.vim'
-Plug 'ripxorip/nvgdb.nvim'
+Plug 'fraisa/nvgdb.nvim'
 Plug 'sgeb/vim-diff-fold'
 Plug 'mhinz/vim-signify'
 Plug 'vimwiki/vimwiki'
@@ -211,7 +211,7 @@ nmap <leader>al <Plug>(AerojumpShowLog)
 nmap <Leader><Space> <Plug>(AerojumpBolt)
 
 " QMK mappings
-nmap <leader>qq :e /home/ripxorip/dev/qmk_firmware/keyboards/handwired/dactyl_manuform/5x6/keymaps/ripxorip/keymap.c <CR>
+nmap <leader>qq :e /home/fraisa/dev/qmk_firmware/keyboards/handwired/dactyl_manuform/5x6/keymaps/fraisa/keymap.c <CR>
 
 " Gdb mappings
 nmap <Leader>ds <Plug>(NvGdbStart)

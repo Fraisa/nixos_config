@@ -46,12 +46,12 @@ in
       ];
     };
     initExtra = ''
-      export PATH=~/tools:~/dev/workspace/tools:/home/ripxorip/dev/ptools:/home/ripxorip/dev/tools:~/.local/bin:$PATH:~/.cargo/bin
+      export PATH=~/tools:~/dev/workspace/tools:/home/fraisa/dev/ptools:/home/fraisa/dev/tools:~/.local/bin:$PATH:~/.cargo/bin
       alias ws="cd ~/dev/workspace"
       alias c="cd"
       alias ..="cd .."
       alias v="nvim"
-      alias k="/home/ripxorip/dev/kde/build/kde/applications/kate/bin/kate"
+      alias k="/home/fraisa/dev/kde/build/kde/applications/kate/bin/kate"
       alias l="exa -la --git --icons"
       alias cat='bat'
       alias less='bat'
@@ -205,9 +205,9 @@ in
           docker_image=$1
           dcmd="docker run --rm -it \
           --group-add $(stat -c '%g' /var/run/docker.sock) \
-          -v /home/ripxorip/dev/workspace:/home/ripxorip/dev/workspace \
+          -v /home/fraisa/dev/workspace:/home/fraisa/dev/workspace \
           -v /var/run/docker.sock:/var/run/docker.sock \
-          -v /home/ripxorip/.history:/home/ripxorip/.history \
+          -v /home/fraisa/.history:/home/fraisa/.history \
           --privileged=true --name $1 \
           $docker_image \
           /bin/zsh -c \

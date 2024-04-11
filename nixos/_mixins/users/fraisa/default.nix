@@ -12,11 +12,11 @@ in
     git
   ];
 
-  users.users.ripxorip = {
+  users.users.fraisa = {
     isNormalUser = true;
     initialPassword = "fraisa";
     # openssh.authorizedKeys.keys = [
-    #   "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPV/ktL05mbhMNHis8zdpYUk76GcnVWXFrxEc8Hvtxhq ripxorip"
+    #   "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPV/ktL05mbhMNHis8zdpYUk76GcnVWXFrxEc8Hvtxhq fraisa"
     # ];
     extraGroups = [
       "wheel"

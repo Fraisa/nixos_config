@@ -21,9 +21,9 @@ raw_out = os.popen(f'BW_SESSION={session_key} bw get item ssh_key_private').read
 json_out = json.loads(raw_out)
 key_data = json_out['notes']
 
-with open(f'{user_home}/.ssh/ripxorip', "w") as key_file:
+with open(f'{user_home}/.ssh/fraisa', "w") as key_file:
     key_file.write(key_data)
 
-os.system(f'chmod 600 {user_home}/.ssh/ripxorip')
+os.system(f'chmod 600 {user_home}/.ssh/fraisa')
 
 os.system("bw logout")

@@ -68,7 +68,7 @@
 
   # In order for VSCode remote to work
   programs.nix-ld.enable = true;
-  programs.talon.enable = true;
+  #programs.talon.enable = true;
   programs.adb.enable = true;
 
   environment.systemPackages = with pkgs; [

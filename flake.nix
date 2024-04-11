@@ -18,8 +18,10 @@
     agenix.inputs.nixpkgs.follows = "nixpkgs";
 
     # For digilent
-    waveforms.url = "github:ripxorip/waveforms-flake";
-    waveforms.inputs.nixpkgs.follows = "nixpkgs";
+    #waveforms.url = "github:ripxorip/waveforms-flake";
+    #waveforms.inputs.nixpkgs.follows = "nixpkgs";
+
+    darkmode_flag.url="github:boolean-option/true";
 
   };
   outputs =
@@ -29,7 +31,7 @@
     , nixpkgs
     , nixos-hardware
     , agenix
-    , waveforms
+    , darkmode_flag
     , ...
     } @ inputs:
     let
@@ -85,11 +87,11 @@
               ./nixos
               agenix.nixosModules.age
               nixos-hardware.nixosModules.dell-xps-15-9530-nvidia
-              waveforms.nixosModule
-              talon-nix.nixosModules.talon
+              #waveforms.nixosModule
+              #talon-nix.nixosModules.talon
             ];
             specialArgs = {
-              inherit inputs outputs stateVersion;
+                inherit inputs outputs stateVersion;
               hostname = "fraisawork";
               username = "fraisa";
               desktop = "gnome";

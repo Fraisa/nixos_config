@@ -10,7 +10,7 @@
     autoRepeatDelay = 250;
     autoRepeatInterval = 50;
     xkbOptions = "eurosign:e,caps:ctrl_modifier";
-    layout = "us";
+    layout = "se";
   };
 
 

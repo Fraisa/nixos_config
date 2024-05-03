@@ -75,7 +75,7 @@
     # gomuks
     obs-studio
     remmina
-    # kicad # TODO Readd this later
+    kicad # TODO Readd this later
     prusa-slicer
     wireshark
     # reaper # Musik

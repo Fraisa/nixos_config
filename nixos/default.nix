@@ -45,16 +45,18 @@
   ];
 
   i18n = {
-    consoleFont   = "lat9w-16";
-    consoleKeyMap = "sv-latin1";
+  #  consoleFont   = "lat9w-16";
+  #  consoleKeyMap = "sv-latin1";
     defaultLocale = "en_US.UTF-8";
   };
 
-  #console = {
-  #  font = "Lat2-Terminus16";
-  #  #keyMap = "us";
-  #  useXkbConfig = true;
-  #};
+  console = {
+    #  consoleFont   = "lat9w-16";
+    #  consoleKeyMap = "sv-latin1";
+    font = "Lat2-Terminus16";
+    #keyMap = "us";
+    useXkbConfig = true;
+  };
 
   nixpkgs = {
     # You can add overlays here

@@ -75,7 +75,13 @@
     # gomuks
     obs-studio
     remmina
-    kicad # TODO Readd this later
+    kicad
+
+    libreoffice-qt
+    hunspell
+    hunspellDicts.uk_UA
+    hunspellDicts.sv_SE
+
     prusa-slicer
     wireshark
     # reaper # Musik

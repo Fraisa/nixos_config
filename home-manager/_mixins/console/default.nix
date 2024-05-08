@@ -14,7 +14,7 @@
       tldr
       starship
       fzf
-      neofetch
+      # neofetch
       ripgrep
       eza
       fd

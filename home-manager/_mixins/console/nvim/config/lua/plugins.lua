@@ -201,6 +201,6 @@ return require('packer').startup(function()
 
     -- Better terminal
     -- use { 'nikvdp/neomux' }
-    use { "catppuccin/nvim", as = "catppuccin" }
+    -- use { "catppuccin/nvim", as = "catppuccin" }
 
 end)

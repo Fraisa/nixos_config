@@ -33,6 +33,18 @@
       dig
       matrix-sh
       wl-clipboard
+
+      libreoffice-qt
+      hunspell
+      hunspellDicts.uk_UA
+      hunspellDicts.sv_SE
+
+      qgis-ltr
+
+      python311Packages.pip
+      python311Packages.pyqt5
+
+      qgroundcontrol
     ];
 
     sessionVariables = {

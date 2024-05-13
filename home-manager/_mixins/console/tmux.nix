@@ -120,6 +120,7 @@ in
     plugins = [
       pkgs.tmuxPlugins.yank
       pkgs.tmuxPlugins.resurrect
+      pkgs.tmuxPlugins.continuum
     ];
 
     # Replaces ~/.tmux.conf
@@ -127,9 +128,9 @@ in
         bind-key r source-file ~/.config/tmux/tmux.conf
 
         setw -g mouse on
-        set -g prefix C-a
-        unbind-key C-b
-        bind-key C-a send-prefix
+        # set -g prefix C-a
+        # unbind-key C-b
+        # bind-key C-a send-prefix
 
         set -g default-terminal "xterm-256color"
         set -ga terminal-overrides ",*256col*:Tc"
@@ -210,6 +211,11 @@ in
         # bind-key -n F10 last-window
         # bind-key -n F11 last-window
         # bind-key -n F12 source-file ~/.dot/tmux/tmux_build_last.conf
+
+        # Restore automatically
+        set -g @plugin 'tmux-plugins/tmux-resurrect'
+        set -g @plugin 'tmux-plugins/tmux-continuum'
+        set -g @continuum-restore 'on'
 
         # Emulate scrolling by sending up and down keys if these commands are running in the pane
         tmux_commands_with_legacy_scroll="less bat man git"

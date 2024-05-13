@@ -1,6 +1,15 @@
 { config, desktop, lib, outputs, pkgs, stateVersion, username, ... }:
 let
   inherit (pkgs.stdenv) isDarwin;
+
+  tex = (pkgs.texlive.combine {
+    inherit (pkgs.texlive) scheme-full
+      dvisvgm dvipng # for preview and export as html
+      wrapfig amsmath ulem hyperref capt-of;
+      #(setq org-latex-compiler "lualatex")
+      #(setq org-preview-latex-default-process 'dvisvgm)
+  });
+
 in
 {
   # Only import desktop configuration if the host is desktop enabled
@@ -26,6 +35,8 @@ in
     sessionPath = [ "$HOME/.local/bin" ];
     inherit stateVersion;
     inherit username;
+
+    packages = with pkgs; [ tex ];
   };
 
   nixpkgs = {

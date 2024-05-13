@@ -35,7 +35,7 @@ o.swapfile = false
 wo.cursorline = true
 wo.wrap = false
 
-vim.api.nvim_exec([[
+--vim.api.nvim_exec([[
 au BufRead,BufNewFile sconstruct set filetype=python
 au BufRead,BufNewFile sconscript set filetype=python
 

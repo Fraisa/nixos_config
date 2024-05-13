@@ -77,14 +77,16 @@
     remmina
     kicad
 
-    libreoffice-qt
-    hunspell
-    hunspellDicts.uk_UA
-    hunspellDicts.sv_SE
-
     prusa-slicer
     wireshark
     # reaper # Musik
-    (pkgs.python3.withPackages (ps: with ps; [ pyserial python-lsp-server ]))
+    (pkgs.python3.withPackages (ps: with ps; 
+    [ 
+      pyserial 
+      python-lsp-server 
+      matplotlib 
+      python-apt
+      qt5
+    ]))
   ];
 }

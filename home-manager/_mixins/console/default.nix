@@ -45,6 +45,10 @@
       python311Packages.pyqt5
 
       qgroundcontrol
+
+      archi ## Block diagrams
+      # teams
+
     ];
 
     sessionVariables = {

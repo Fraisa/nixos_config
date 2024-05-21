@@ -85,8 +85,9 @@
       pyserial 
       python-lsp-server 
       matplotlib 
-      python-apt
       qt5
     ]))
   ];
+
+  services.printing.enable = true;
 }

@@ -47,7 +47,7 @@
       qgroundcontrol
 
       archi ## Block diagrams
-      # teams
+      teams-for-linux
 
     ];
 

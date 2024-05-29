@@ -10,6 +10,7 @@ in
     vim
     wget
     git
+    gitFull
   ];
 
   users.users.fraisa = {
@@ -33,6 +34,7 @@ in
     ];
     packages = with pkgs; [
       firefox
+      microsoft-edge
       tree
     ];
     shell = pkgs.zsh;

@@ -109,6 +109,9 @@ in
       # Accpept suggestions with space
       bindkey '^ ' autosuggest-accept
       bindkey '^o' autosuggest-accept
+      bindkey '^ ' forward-word
+      bindkey '^H' backward-kill-word
+
       # Reloads the history whenever you use it
       setopt share_history
 
@@ -203,7 +206,7 @@ in
       function ds()
       {
           docker_image=$1
-          dcmd="docker run --rm -it \
+          dcmd="docker run --rm -it \3
           --group-add $(stat -c '%g' /var/run/docker.sock) \
           -v /home/fraisa/dev/workspace:/home/fraisa/dev/workspace \
           -v /var/run/docker.sock:/var/run/docker.sock \

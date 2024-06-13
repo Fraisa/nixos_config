@@ -34,6 +34,7 @@
       matrix-sh
       wl-clipboard
 
+      notepadqq
       libreoffice-qt
       hunspell
       hunspellDicts.uk_UA

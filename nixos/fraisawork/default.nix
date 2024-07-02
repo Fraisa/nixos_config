@@ -72,13 +72,15 @@
   programs.adb.enable = true;
 
   environment.systemPackages = with pkgs; [
-    # gomuks
+    
+
     obs-studio
     remmina
     kicad
 
     prusa-slicer
     wireshark
+    
     # reaper # Musik
     (pkgs.python3.withPackages (ps: with ps; 
     [ 
@@ -87,6 +89,8 @@
       matplotlib 
       qt5
     ]))
+
+    qtcreator
   ];
 
   services.printing.enable = true;

@@ -34,7 +34,6 @@ in
     ];
     packages = with pkgs; [
       firefox
-      microsoft-edge
       tree
     ];
     shell = pkgs.zsh;

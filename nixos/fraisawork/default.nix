@@ -80,7 +80,7 @@
 
     prusa-slicer
     wireshark
-    
+
     # reaper # Musik
     (pkgs.python3.withPackages (ps: with ps; 
     [ 

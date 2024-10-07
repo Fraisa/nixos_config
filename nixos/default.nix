@@ -45,9 +45,8 @@
   ];
 
   i18n = {
-  #  consoleFont   = "lat9w-16";
-  #  consoleKeyMap = "sv-latin1";
     defaultLocale = "en_US.UTF-8";
+    # supportedLocales = [ "en_US.UTF-8" "sv_SE.UTF-8" ];
   };
 
   console = {
